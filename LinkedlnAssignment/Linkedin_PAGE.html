@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linked.in</title>
+    <link rel="icon" href="./images/title image.png" type="image/x-icon">
+    <style>
+         *{
+        margin: 0px;                               /* --------USING INTERNAL  AND INLINE CSS----------- */
+        padding: 0px;                              
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family:serif ;
+      }
+      body{
+        background-color: lightgrey;
+      }
+      .main_container{
+        display: grid;
+        grid-template-areas:
+          "nav nav nav"
+          "left center right"
+          "left center right";
+        grid-gap: 2px;
+      }
+      .nav{
+        grid-area: nav;
+        background-color: whitesmoke;
+        height: 100px;
+      } 
+     .leftsection{
+        grid-area: left;
+        background-color: white;
+        height: 480px;
+        width: 300px;
+        border-radius: 30px;
+        margin-left: 100px;
+        margin-top: 15px;
+     } 
+     .centersection{
+        grid-area: center;
+        background-color: whitesmoke;
+        width: 700px;
+        height: 100px;
+        margin-top: 10px;
+     }
+     .rightsection{
+        grid-area: right;
+        background-color: whitesmoke;
+        width: 230px;
+        height: 220px;
+        margin-top: 10px;
+        margin-right: 100px;
+     }
+          /* --------------------NAVBAR------------------------- */
+     #logo{
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+      .searchbox{
+        margin-left: 150px;
+       padding-bottom: 30px;
+       margin-top: -40px;
+       background-color: rgb(129, 229, 229);
+       border: transparent;
+       border: 2px solid rgb(245, 243, 243) ;
+       width: 200px;
+       height: 10px;
+      }
+      .iconsection{
+        color: gray;
+        margin-left:670px;
+        margin-top: -35px; 
+      }
+      .topprofile{
+        margin-left: 83%;
+        margin-top: -35px;
+        border: 3px solid whitesmoke;
+        border-left-color: gray;
+        height: 50px;
+        padding-left: 20px;
+      }
+       /* --------------------NAVBAR CLOSED------------------------- */
+      /*--------------LEFT SIDE BAR---------------------*/
+      .leftsection > .leftborderbox1{
+        border: 2px solid whitesmoke;
+        height: 425px;
+        border-radius: 30px;
+        background-color: whitesmoke;
+      }
+      .leftsection > .leftborderbox1 > .profile-img{
+        width: 70px;
+        border-radius: 50px;
+        margin-left: 110px;
+        margin-top: -40px;
+      }
+      #contentbox2{
+        border: 2px solid whitesmoke;
+        border-radius: 10px;
+        width: 300px;
+        height: 350px;
+        background-color: whitesmoke;
+        padding-left: 10px;
+      }
+
+        /*--------------LEFT SIDE BAR CLOSED---------------------*/
+       /*-----------------CENETER SECTION--------------------*/
+       .centersection > .centerbox2{
+        border: 1px solid whitesmoke;
+        background-color: whitesmoke;
+        height: 500px;
+        margin: 0px;
+        padding: 0px; 
+      }
+      .centersection > .centerbox2 > .centerbox3{
+        border: 2px solid whitesmoke;
+        background-color: whitesmoke;
+        height: 700px;
+        margin: 0px;
+        padding: 0px;
+      }
+       /*-----------------CENETER SECTION CLOSED--------------------*/
+       /*-----------------RIGHT SIDE BAR------------------------------------------*/
+       .rightsection > .rightbox2{
+        border: 3px solid whitesmoke;
+        height: 200px;
+        background-color: whitesmoke;
+        
+      }
+      .rightsection > .rightbox2 > .rightbox3{
+        border: 3px solid whitesmoke;
+        height: 450px;
+        background-color: whitesmoke;
+      }
+      .rightsection > .rightbox2 > .rightbox3 > .border_box_1{
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 170px;                           
+        margin-left: 30px;
+        padding-left: 45px;
+      }
+      /*-----------------RIGHT SIDE CLOSED-------------------*/
+    </style>
+</head>
+<body>
+    <div class="main_container"> <!-- MAIN CONTAINER DIV-->
+        <div class="nav"> <!--MAIN NAV NAR DIV TAG-->
+            <a href=https://www.linkedin.com/feed/?nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BC1B7D%2BWHTe%2BjQc5%2FlL42%2FA%3D%3D"" target="_blank"><img id="logo" src="./images/title image.png" alt="Linkedin logo"></a> <!--Linkedin logo-->
+        
+            <div class="searchbox"> <!--searchbox opening tag-->
+              <img style="padding-top: 5px;" width="20px" height="20px" src="./images/search-interface-symbol.png" alt="searchicon">
+              <input style="background-color: rgb(129, 229, 229); border: transparent; color:" type="search" value="Search" placeholder="Search"> <!--using inline css for bg color and border transparency -->
+            </div>   <!--searchbox opening tag-->
+    
+            <div class="iconsection">  <!--icon div tag--> 
+            <a href="*"><img style="width: 30px; height:30px;" src="./images/home.png" alt="homeicon"></a>&nbsp; Home &nbsp;&nbsp;  
+            <a href="*"><img style="width: 30px; height: 30px;" src="./images/my network.png" alt="mynetworkicon"></a> My Network &nbsp;&nbsp; 
+            <a href="*"><img style="width: 30px; height: 30px;" src="./images/jobs.png" alt="jobicon"></a>&nbsp; Jobs  &nbsp;&nbsp; 
+            <a href="*"><img style="width: 30px; height:30px;" src="./images/chat.png" alt="msgicon"></a>&nbsp; Messaging &nbsp;&nbsp; 
+            <a href="*"><img style="width: 30px; height: 30px;" src="./images/bell.png" alt="notificationicon"></a> Notificationicon &nbsp;&nbsp; 
+            </div>    <!-------------------------icon div tag CLOSED---------------------->  
+            <div class="topprofile">
+              <img style="border-radius:45px;" src="./images/Profile image.png" alt="profileimg" width="40px" height="40px">&nbsp;&nbsp;Try Premium For 1 month <!--top right Profile img-->
+            </div>
+           
+        </div> 
+               <!------------------MAIN NAV NAR DIV TAG CLOSED------------>
+
+        <div class="leftsection"> <!---------------- LEFT SIDE BAR DIV ---------------->
+            <div class="leftborderbox1">  <!---------------------LEFT BORDER BOX--------------------->
+                <img style="border-top-left-radius: 30px; border-top-right-radius: 30px; width: 296px; height: 100px;" 
+                src="./images/background.jpg" alt="bgcoverimg">
+                <img class="profile-img" src="./images/Profile image.png" alt="profileimg">
+                 <br>
+                 <h1>&ensp;&ensp;&ensp; Yash Sharma</h1>
+                 <h5 style="color: gray;">&emsp;&emsp;&emsp;&ensp;Technical Trainer At Skill Academy</h3>
+                <hr>
+                <h5 style="color: gray;">&ensp;Conections &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b style="color: blue; font-size: 20px;">30</b></h5>
+                <h3>&nbsp;Grow your network</h3>
+                <br>
+                <h3>&nbsp;Who viewed your profile &emsp;&emsp;&emsp;&ensp; <b style="color: blue; font-size: 20px;">30</b></h1>
+                <hr><br>
+                <h6 style="color: gray;">&ensp;Access exclusive Tools and sights</h6>
+                <h5 style="color: gray;">&ensp;Try Premium For One month</h5>
+                <br><hr><br>
+                <h3>&ensp;<img src="./images/bookmark.png" width="20px" height="20px" alt=""> &nbsp;My Items</h3>
+               <br><hr><br>
+               <br>
+               <div id="contentbox2">  <!--LEFT SIDE CONTENT BOX-->
+                <h3>Recent</h3>
+               <br>
+                    <h4># Tensorflow</h4>
+                    <h4># Tensorflow</h4>
+                    <h4># Tensorflow</h4>
+                    <h4># Tensorflow</h4>
+                    <h4># Tensorflow</h4>
+                 <br>
+                 <h3 style="color: blue;">Groups</h3> <br>
+                 <h4 style="color: gray;"> <img src="./images/my network.png" width="20px" height="20px" alt="logoimg"> &emsp;Tensorflow</h4>
+                 <h4 style="color: gray;"> <img src="./images/my network.png" width="20px" height="20px" alt="logoimg"> &emsp;Tensorflow</h4> <br>
+                 <h3 style="color: blue;">Followed Hashtags</h3> <br>
+                 <h4 style="color: gray;">&ensp;&ensp;#Tensorflow</h4>
+                 <h4 style="color: gray;">&ensp;&ensp;#Tensorflow</h4>
+      
+                </div>     <!--LEFT SIDE CONTENT BOX CLOSED-->
+            </div>    <!---------------------LEFT BORDER BOX CLOSED-------------------------->
+        </div> <!-- LEFT SIDE BAR DIV CLOSED -->
+        <div class="centersection"> <!--MAIN CENTER SECTION -->
+            <div>
+                <img style="border-radius: 50px; margin-top: 10px; margin-left: 40px; float: left;" src="./images/Profile image.png" width="40px" height="40px" alt="profileimg">
+         
+               </div>  
+               <div style="border: 1px solid gray;height: 30px; width: 490px; padding-left: 20px;padding-top: 3px; border-radius: 50px; margin-left: 100px; margin-top: 25px;">start a post
+               </div>
+               <img style="margin-top: 10px; margin-left: 50px;" src="./images/picture.png" width="25px" height="25px" alt="photoimg"><b style="color: gray; margin-left: 8px;">Photo</b>
+               <img style="margin-top: 10px; margin-left: 50px;" src="./images/video.png" width="25px" height="25px" alt="photoimg"><b style="color: gray; margin-left: 8px;">video</b>
+               <img style="margin-top: 10px; margin-left: 50px;" src="./images/schedule.png" width="25px" height="25px" alt="photoimg"><b style="color: gray; margin-left: 8px;">Event</b>
+               <img style="margin-top: 10px; margin-left: 50px;" src="./images/articles.png" width="25px" height="25px" alt="photoimg"><b style="color: gray; margin-left: 8px;">Write Article</b>
+                        <!---------- 1ST POST SECTION CLOSED---------->
+                   <br><br>
+               <div class="centerbox2">    <!----------main div CETERBOX2------------>
+                 <img style="margin-top: 20px; margin-left: 40px; float: left; " src="./images/myntra logo.jpg" width="50px" height="50px" alt="myntralogo">
+                 
+               <!-- MYNTRA LOGO PART--> <div style=" margin-left:20px; margin-top: 40px;">&emsp; Myntra Fashion<br>&ensp; 7,92,456 Followers
+                 <img style="margin-left: 430px;" src="./images/option.png" width="20px" height="20px" alt="logo">
+                 </div><br>  <!-- MYNTRA LOGO PART-->
+                                                           <!------RCB AD IMG--------> 
+                <img src="./images/RCB img.jpg" width="700px" height="300px" alt="adimg"><br>
+                <img src="./images/Like.svg" width="30px" height="30px" alt="like">&emsp;
+                <img src="./images/Appreciate.svg" width="30px" height="30px" alt="clap">&emsp;
+                <img src="./images/Clap.svg" width="30px" height="30px" alt="clap"><br><b>20. Comments</b>
+                <br><hr>
+                <img src="./images/like.png" width="20px" height="20px"  alt="likepng">&emsp;Like&emsp;
+                <img src="./images/comment.png" width="20px" height="20px" alt="commentspng">&emsp;Comments&emsp;
+                <img src="./images/share.png" width="20px" height="20px" alt="sharepng">&emsp;Share &emsp;
+                <img src="./images/paper-plane.png" width="20px" height="20px" alt="sendpng">&emsp;Send&emsp;&emsp;&emsp;
+                       <br><br><br>                                  <!------RCB AD IMG--------> 
+                <div class="centerbox3">    <!-----main div CENTERBOX3-------->
+                 <img style="margin-top: 20px; margin-left: 30px; display:flex; float: left; " src="./images/Profile logo of yash.jpg" width="60" height="60px" alt="logo">
+                 <div style="margin-top: 20px;">&emsp;Yash Sharma<br>&emsp;10Million-Follower<br>&emsp;YouTubechannel</div>
+                 <br>
+                 <p style="margin-left: 10px; font-size: 20px;">
+                   Published new video on CSS property Box model. this video will run through few more
+                   properties that make up the box-model,Margin,Border,Padding,Content-Height & widht.
+                 </p>
+               
+                <div>
+                 <video width="690px" controls src="./images/Demo post video.mp4" ></video>
+                 <img src="./images/Like.svg" width="30px" height="30px" alt="like">&emsp;
+                 <img src="./images/Appreciate.svg" width="30px" height="30px" alt="clap">&emsp;
+                 <img src="./images/Clap.svg" width="30px" height="30px" alt="clap"><br><b>20. Comments</b>
+                </div>
+                <br><hr>
+                <img src="./images/like.png" width="30px" height="30px"  alt="likepng">&emsp;Like&emsp;
+                <img src="./images/comment.png" width="30px" height="30px" alt="commentspng">&emsp;Comments&emsp;
+                <img src="./images/share.png" width="30px" height="30px" alt="sharepng">&emsp;Share &emsp;
+                <img src="./images/paper-plane.png" width="30px" height="30px" alt="sendpng">&emsp;Send&emsp;&emsp;&emsp;
+                       
+                </div>          <!-----main div CENTERBOX3-------->                                  
+               </div>    <!----------main div CETERBOX2------------>  
+             
+        </div> <!--MAIN CENTER SECTION CLOSED-->
+             <!----------------------------------------CenterSection Closed------------------------------------------->
+        <div class="rightsection">  <!--RIGHT SIDE BAR DIV-->
+            <h3>Linkedin News <img style="margin-left: 80px;" src="./images/information-button.png" width="20px" height="20px" alt="infoimg"></h3><br>
+        <ul style="padding-left: 20px;">
+          <li style="padding-left: 3px;">indian crosees 3,58,947 daily<br>cases<br><h6 style="color: gray; padding-left: 5px;">10h ago-5,043 readers </h6></li>
+          <li style="padding-left: 3px;">Zomato files for $1.18 IPO<br><h6 style="color: gray;">13h ago-52,043 readers</h6></li>
+          <li style="padding-left: 3px;">Jobs pay ,in IT soar<br><h6 style="color: gray;">ago-7,865 readers</h6></li>
+          <li style="padding-left: 3px;">Google saving $1B a year from WFH<br><h6 style="color: gray;">2d ago-7,865 readers</h6></li>
+        </ul>  <br><br>
+
+      <div class="rightbox2">
+        <h3>Today's most viewed Courses <img style="margin-left: 130px;" src="./images/information-button.png" width="20px" height="20px" alt="infoimg"> </h3><br>
+        <ul style="padding-left: 20px;">
+          <li>Indian crosees 3,58,974 daily<br>cases<br><h6 style="color: gray;">Top news 9874-reviews</h6></li>
+          <li>Indian crosses 3,58,947 daily<br>cases<br><h6>Top news 9874-reviews</h6></li>        
+        </ul> <br><br><br>
+
+        <div class="rightbox3"> 
+          <h3>Add to your feed <img style="margin-left: 60px;" src="./images/information-button.png" width="20px" height="20px" alt="infoimg"></h3><br>
+          <br>
+         <img style="margin-left: 10px; float: left; -left:" src="./images/unilever logo.png" width="50px" height="50px" alt="unileverimg">
+         <h2>&emsp; Unilever</h2><h5 style="color: gray;">Company - Consumer Goods</h5><br>
+         <div class="border_box_1">+&nbsp; Follow</div>
+                   <!----------- RIGHT SIDE box 1 for unilever ------------->
+         <br><hr><br>
+         <img style="margin-left:10px; float: left;" src="./images/LinkedIn logo.png" width="40px" height="40px" alt="linkedin img">
+         <h2>&emsp; LinkedIn</h2><h5 style="color: gray;">Company-Internet</h5><br>
+         <div style="border: 2px solid black; width: 150px; border-radius: 50px; margin-left: 20px; padding-left: 30px;">+ &nbsp; Follow</div> <br><hr>
+                     <!----------- RIGHT SIDE box 2 for linkedin ------------->
+         <img style="margin-left:10px; float: left; margin-top: 20px;"  src="./images/myntra logo.jpg" width="50px" height="50px" alt="myntraimg">
+         <h2 style="margin-top: 20px;">&emsp;Myntra</h2><h5 style="color: gray;">Company-Internet</h5>
+         <div style="border: 2px solid black; width: 150px; border-radius: 50px; margin-left: 20px; padding-left: 30px; margin-top: 20px;">+ &ensp; Follow</div>
+         <br><hr>     <!------------- RIGHT SIDE box for myntra ------------------->
+        </div> <!--RIGHT SIDE BAR DIV CLOSED-->
+    </div>   <!-- MAIN CONTAINER DIV CLOSE-->
+   
+</body>
+</html>
