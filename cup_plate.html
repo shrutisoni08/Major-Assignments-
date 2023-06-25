@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cup-plate-smoke</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightpink;
+        }
+        .container{
+            width: 600px;
+            height: 500px;
+            border: 1px solid white;
+            margin: 40px 0px 0px 50px;
+            position: relative;
+        }
+    
+        .plate{
+            width: 290px;
+            height: 25px;
+            border: 2px solid rgb(119, 130, 234);
+            background-color: rgb(141, 240, 199);
+            position: relative;
+            border-radius: 30%;
+            box-shadow: 2px 5px 5px 2px;
+            left: 124px;
+            top: 149px;
+            
+        } 
+
+        #cup{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            border: 5px solid rgb(111, 38, 38);
+            border-bottom-left-radius: 45%;
+            border-bottom-right-radius: 45%;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            position: relative;
+            left: 170px;
+            top: 150px;
+        }
+        .handle{
+            border: 10px solid rgb(111, 38, 38);
+            height: 80px;
+            width: 70px;
+            position: relative;
+            left: 193px;
+            top: 10px;
+            border-top-right-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
+        .smoke{
+            border: 10px solid white;
+            border-radius: 50%;
+            width: 20px;
+            position: relative;
+            display: inline-block;
+            bottom: 25px;
+            left: 35px;
+            transform: translate(10%);
+            animation: animate 5s linear infinite;
+            opacity: 0;
+            filter: blur(5px); 
+
+        }
+    
+        @keyframes animate{
+            0%{
+                transform: translateY(0) scaleX(1);
+                opacity: 0;
+            } 
+            15%{
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(-100px) scaleX(5);
+            }
+            95%{
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(-150px) scaleX(10);
+            }
+        } 
+        
+    </style>
+</head>
+<body>
+    <center><h1><i style="color: aquamarine;">Animation</i></h1></center>
+    <div class="container">
+        <div id="cup"> 
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+
+            <div class="handle"></div> </div>
+
+            <div class="plate"> </div>
+            
+        <div class="container2">
+            <div class="glass">
+                <div class="plate2"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+   
+</body>
+</html>
